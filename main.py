@@ -18,14 +18,14 @@ def main():
     dicionario = carregar_dicionario("palavras.txt")
 
     # gera lista inicial de palavras possíveis
-    palavras_iniciais = gerar_palavras_possiveis(dicionario, letras, letra_central)
+    palavras = gerar_palavras_possiveis(driver, dicionario, letras, letra_central)
 
     print(f"\n[INFO] Letras do dia: {' '.join(letras)}")
     print(f"[INFO] Letra central: {letra_central}")
-    print(f"[INFO] Total de palavras iniciais: {len(palavras_iniciais)}")
+    print(f"[INFO] Total de palavras iniciais: {len(palavras)}")
 
     # agora passa também letras e letra_central para o robô
-    digitar_palavras(driver, palavras_iniciais)
+    digitar_palavras(driver, palavras)
 
     input("Pressione Enter para fechar o navegador...")
     fechar_navegador(driver)
