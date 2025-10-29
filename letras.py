@@ -1,5 +1,9 @@
 from selenium.webdriver.common.by import By
 
+"""
+Módulo responsável por fazer a captura das letras do dia e da palavra central.
+"""
+
 def capturar_letras_dia(driver):
     try:
         elementos_letras = driver.find_elements(By.CSS_SELECTOR, "text.cell-letter")

@@ -7,6 +7,7 @@ import time
 def iniciar_jogo(driver):
     """
     Aguarda o botão 'Iniciar' aparecer e clica nele.
+    Em seguida será clicado no botão de fechar do seção Ajuda do jogo.
     """
     try:
         # Ajuste o seletor para o botão de início do seu jogo
