@@ -127007,6 +127007,7 @@ carrelo
 carreno
 carrense
 carrequim
+carrer
 carreta
 carretada
 carretagem
@@ -171682,6 +171683,7 @@ corgulhada
 cori
 coria
 coriaceamente
+coriácea
 coriadenoma
 corial
 corialantoide

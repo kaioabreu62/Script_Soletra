@@ -58,12 +58,12 @@ def gerar_palavras_possiveis(driver, dicionario, letras, letra_central):
             if match:
                 tamanhos.append(int(match.group(1)))
 
-        # Caso não encontre o tamanho máximo do dia, assume 11 como padrão (acredito ser a maior quantidade de letras que o jogo gere)
-        tamanho_maximo = max(tamanhos) if tamanhos else 11
+        # Caso não encontre o tamanho máximo do dia
+        tamanho_maximo = max(tamanhos) if tamanhos else 0
         print(f"[INFO] Tamanho máximo detectado: {tamanho_maximo} letras")
     except Exception as e:
-        tamanho_maximo = 11
-        print(f"[AVISO] Não foi possível detectar o tamanho máximo ({e}). Usando 11 como padrão.")
+        tamanho_maximo = 0
+        print(f"[AVISO] Não foi possível detectar o tamanho máximo ({e}).")
 
     # Filtra o dicionário e gera apenas as palavras válidas possíveis
     for palavra in dicionario:

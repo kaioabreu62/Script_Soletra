@@ -1,9 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-import time
 
-
+"""
+Módulo para entrar no jogo pelo navegador e para fechá-lo.
+"""
 
 def iniciar_navegador(url):
     # Configurações opcionais (como abrir maximizado)
