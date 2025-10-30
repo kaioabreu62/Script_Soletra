@@ -11,6 +11,12 @@ def iniciar_jogo(driver):
     """
     try:
         # Ajuste o seletor para o botão de início do seu jogo
+        botao_jogar_agora = WebDriverWait(driver, TEMPO_ESPERA).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--primary.full-size-button.svelte-1t84pcu'))
+        )
+        botao_jogar_agora.click()
+        time.sleep(0.60)
+
         botao_iniciar = WebDriverWait(driver, TEMPO_ESPERA).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--game-white.intro-button.svelte-1t84pcu'))
         )
@@ -22,6 +28,7 @@ def iniciar_jogo(driver):
         )
         botao_fechar_ajuda.click()
         time.sleep(0.60)
+        
         print("[INFO] Jogo iniciado com sucesso.")
     except Exception as e:
         print("[ERRO] Não foi possível clicar no botão de iniciar:", e)
