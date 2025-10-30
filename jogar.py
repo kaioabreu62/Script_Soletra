@@ -64,6 +64,5 @@ def digitar_palavras(driver, palavras):
     # tempo total da execução em minutos
     tempo_minutos = tempo_total / 60
 
-    print(f"\n[RESUMO] {len(palavras_aceitas)} aceitas de {len(palavras_tentadas)} tentadas.")
     print(f"[TEMPO TOTAL] {tempo_total:.2f} segundos ({tempo_minutos:.2f} minutos)")
     return list(palavras_aceitas)

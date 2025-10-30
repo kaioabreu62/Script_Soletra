@@ -44,8 +44,8 @@ def gerar_palavras_possiveis(driver, dicionario, letras, letra_central):
     """
 
     # Normaliza letras (sem acento apenas para comparação)
-    letras_set = set(remover_acentos(l) for l in letras)
-    letra_central = remover_acentos(letra_central)
+    letras_set = set(l for l in letras)
+    letra_central = letra_central
     palavras_validas = []
 
     # Detecta o maior tamanho disponível de letras no dia (ex: 10 letras)
