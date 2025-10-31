@@ -10,15 +10,18 @@ def iniciar_jogo(driver):
     Em seguida será clicado no botão de fechar do seção Ajuda do jogo.
     """
     try:
-        # Ajuste o seletor para o botão de início do seu jogo
-        botao_jogar_agora = WebDriverWait(driver, TEMPO_ESPERA).until(
+        try:
+            # Ajuste o seletor para o botão de início do seu jogo
+            botao_jogar_agora = WebDriverWait(driver, TEMPO_ESPERA).until(
             EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--primary.full-size-button.svelte-1t84pcu'))
-        )
-        botao_jogar_agora.click()
-        time.sleep(0.60)
-
+            )
+            botao_jogar_agora.click()
+            time.sleep(0.60)
+        except:
+            pass
+        
         botao_iniciar = WebDriverWait(driver, TEMPO_ESPERA).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--game-white.intro-button.svelte-1t84pcu'))
+        EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--game-white.intro-button.svelte-1t84pcu'))
         )
         botao_iniciar.click()
         time.sleep(0.60)
