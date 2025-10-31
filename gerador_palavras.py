@@ -52,9 +52,13 @@ def gerar_palavras_possiveis(driver, dicionario, letras, letra_central):
     try:
         spans = driver.find_elements(By.CSS_SELECTOR, "span.length")
         tamanhos = []
+        # Percorre uma lista de spans
         for span in spans:
+            # extrai o texto removendo espaços em branco
             texto = span.text.strip()
+            # procurar por números decimais e retorna o primeiro grupo que encontrar
             match = re.search(r"(\d+)", texto)
+            # só adiciona para a variavél tamanhos se o número decimal foi encontrado e converte para int
             if match:
                 tamanhos.append(int(match.group(1)))
 
