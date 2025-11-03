@@ -17,6 +17,18 @@ def iniciar_jogo(driver):
             )
             botao_jogar_agora.click()
             time.sleep(0.60)
+
+            botao_iniciar = WebDriverWait(driver, TEMPO_ESPERA).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--game-white.intro-button.svelte-1t84pcu'))
+            )
+            botao_iniciar.click()
+            time.sleep(0.60)
+
+            botao_fechar_ajuda = WebDriverWait(driver, TEMPO_ESPERA).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, '.button.button--game-white.drawer-close-icon.svelte-1t84pcu'))
+            )
+            botao_fechar_ajuda.click()
+            time.sleep(0.60)
         except:
             pass
         
