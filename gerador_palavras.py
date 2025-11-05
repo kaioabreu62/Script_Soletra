@@ -38,7 +38,7 @@ def gerar_palavras_possiveis(driver, dicionario, letras, letra_central):
      - dicionario -> conjunto de palavras do arquivo local (palavras.txt);
      - letras -> lista das letras disponíveis no dia.
 
-     Retorna:
+    Retorna:
      - Uma lista ordenada de palavras válidas possíveis (da menor quantidade até a maior). 
     
     """
