@@ -482035,6 +482035,7 @@ paradoxismo
 paradoxista
 paradoxite
 paradoxização
+paradoxa
 paradoxo
 paradoxologia
 paradoxológico
@@ -532041,6 +532042,7 @@ puxado
 puxadoira
 puxadoiro
 puxador
+puxadora
 puxadores
 puxados
 puxadoura
@@ -663463,6 +663465,7 @@ xarifino
 xaroca
 xaroco
 xaropada
+xaropado
 xaropadas
 xaropar
 xarope
